@@ -1,10 +1,8 @@
 import {
   Box,
-  Heading,
-  Text,
-  Image,
+  Heading, Image,
   Skeleton,
-  SkeletonText,
+  SkeletonText, Text
 } from '@chakra-ui/react';
 import { useState } from 'react';
 
@@ -30,7 +28,7 @@ export function Card({ data, viewImage }: CardProps): JSX.Element {
           src={data.url}
           alt={data.title}
           objectFit="cover"
-          w="max"
+          w="full"
           h={48}
           borderTopRadius="md"
           onClick={() => viewImage(data.url)}
